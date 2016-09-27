@@ -16,6 +16,30 @@ body {
     h4,
     h5 {
         font-weight: 300;
+        &.lead {
+            color: rgba($primary, .75);
+        }
+    }
+
+    //@for $i from 1 through 6 {
+    //    h#{i} {
+    //        &.lead {
+    //            font-size: sqrt((2.5/($i/2)))em;
+    //        }
+    //    }
+    //}
+
+    h1.lead {
+        font-size: 2.5em;
+    }
+    h2.lead {
+        font-size: 2.25em;
+    }
+    h3.lead {
+        font-size: 2em;
+    }
+    h4.lead {
+        font-size: 1.75em;
     }
 
     p {
@@ -105,3 +129,11 @@ body {
         }
     }
 }
+
+
+.divider {
+    width: 100%;
+    margin: 3em 0 3em;
+    border-bottom: dashed thin rgba($primary, .25);
+}
+
