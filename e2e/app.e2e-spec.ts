@@ -1,14 +1,14 @@
 import { CareerPortalIoPage } from './app.po';
 
-describe('career-portal-io App', function() {
-  let page: CareerPortalIoPage;
+describe('App: AppComponent', function() {
+    let page: CareerPortalIoPage;
 
-  beforeEach(() => {
-    page = new CareerPortalIoPage();
-  });
+    beforeEach(() => {
+        page = new CareerPortalIoPage();
+    });
 
-  it('should display message saying app works', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
-  });
+    it('should have 4 primary navigation buttons.', () => {
+        page.navigateTo();
+        expect(page.getNavigationLinks()).toEqual(4);
+    });
 });
