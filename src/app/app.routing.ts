@@ -21,12 +21,12 @@ const appRoutes: Routes = [
         component: DeploymentComponent
     },
     {
-        path: '',
+        path: 'getting-started',
         component: GettingStartedComponent
     },
     {
         path: '**',
-        component: GettingStartedComponent
+        redirectTo: 'getting-started'
     }
 ];
 

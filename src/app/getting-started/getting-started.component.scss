@@ -1,0 +1,43 @@
+@import "../../vars";
+
+.jumbotron {
+    margin-bottom: 1em;
+    background-color: $primary;
+    color: white;
+    text-align: center;
+    padding: 2em 0 4em;
+    > nav {
+        margin-top: 3em;
+        > a {
+            text-decoration: none;
+            color: $primary;
+            border: none;
+            background: rgba(white, .8);
+            padding: .65em 1.75em;
+            border-radius: .5em;
+            font-family: 'Open Sans', sans-serif;
+            font-size: .8em;
+            margin-right: .5em;
+            transition: background-color 250ms, color 250ms;
+
+            &:hover {
+                background-color: white;
+            }
+
+            > i {
+                font-size: 1.25em;
+                margin-right: .5em;
+            }
+        }
+
+        > a:last-child {
+            margin-right: 0;
+            background-color: $blue;
+            color: white;
+
+            &:hover {
+                background-color: darken($blue, 15%);
+            }
+        }
+    }
+}

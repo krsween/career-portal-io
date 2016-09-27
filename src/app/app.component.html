@@ -1,10 +1,18 @@
-<nav>
-    <a routerLink="/" routerLinkActive="active">Getting Started</a>
-    <a routerLink="/customization" routerLinkActive="active">Customization</a>
-    <a routerLink="/extensibility" routerLinkActive="active">Extensibility</a>
-    <a routerLink="/deployment" routerLinkActive="active">Deployment</a>
-</nav>
+<!-- HEADER -->
+<header>
+    <nav>
+        <span routerLink="/getting-started">
+            Career Portal
+        </span>
+        <a routerLink="/getting-started" routerLinkActive="active">Getting Started</a>
+        <a routerLink="/customization" routerLinkActive="active">Customization</a>
+        <a routerLink="/extensibility" routerLinkActive="active">Extensibility</a>
+        <a routerLink="/deployment" routerLinkActive="active">Deployment</a>
+    </nav>
+</header>
+<!-- CONTENT -->
 <router-outlet></router-outlet>
+<!-- FOOTER -->
 <footer>
-    <p>Made with </p>
+    <p>&copy; 2016 Bullhorn | Made with <i class="fa fa-heart"></i> by Bullhorn.</p>
 </footer>

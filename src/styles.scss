@@ -1,3 +1,107 @@
-body {
+@import "vars";
+
+html, body {
     font-family: 'Open Sans', sans-serif;
+    //height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: $primary;
+}
+
+body {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-weight: 300;
+    }
+
+    p {
+        line-height: 1.75em;
+    }
+
+    app-root {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+
+        // Loading Icon
+        > p {
+            text-align: center;
+            width: 100%;
+            padding-top: 3em;
+            .fa-spinner {
+                color: rgba(black, .5);
+            }
+        }
+
+        header {
+            display: flex;
+            background-color: rgba($primary, 1);
+            flex: 1 1 80px;
+            // Primary Navigation
+            nav {
+                flex: 1;
+                display: flex;
+                align-items: stretch;
+                span {
+                    font-size: 1.3em;
+                    font-weight: 300;
+                    color: white;
+                    flex: 3;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 1em;
+                    cursor: pointer;
+                }
+                // Primary Link
+                a {
+                    align-items: center;
+                    display: flex;
+                    flex: 1;
+                    justify-content: center;
+                    color: rgba(white, .7);
+                    text-decoration: none;
+                    transition: background-color 250ms, color 250ms, border-color 250ms;
+                    border-top: solid 2px $primary;
+
+                    &:hover {
+                        color: white;
+                    }
+
+                    &.active {
+                        color: white;
+                        border-top-color: white;
+                    }
+                }
+            }
+        }
+        // Component Pages
+        app-deployment,
+        app-customization,
+        app-extensibility,
+        app-getting-started {
+            flex: 1;
+            display: flex;
+            flex-flow: inherit;
+            > section {
+                width: 900px;
+                margin: auto;
+            }
+        }
+        // Footer
+        footer {
+            display: flex;
+            flex: 1 1 80px;
+            color: rgba($primary, .5);
+            font-size: .9em;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            align-self: baseline;
+        }
+    }
 }
