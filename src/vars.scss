@@ -1,5 +1,115 @@
-$primary: #1b2127;
-$blue: #07f;
+// Colors
+// --------------------------------------------------
+$black: #000000;
+$white: #ffffff;
+$grey: #999999;
+$off-white: #f4f4f4;
+$dark: #3D464D;
+$light: #D9DADC;
+$navy: #0D2D42;
+$pulse: #3BAFDA;
+
+// Analytics Colors
+$aqua: #3BAFDA;
+$ocean: #4A89DC;
+$mint: #37BC9B;
+$grass: #8CC152;
+$sunflower: #F6B042;
+$bittersweet: #EB6845;
+$grapefruit: #DA4453;
+$carnation: #D770AD;
+$lavender: #967ADC;
+
+// Entity Colors
+$company: #3399DD;
+$candidate: #44BB77;
+$navigation: #2F384F;
+$lead: #AA6699;
+$contact: #FFAA44;
+$opportunity: #662255;
+$job: #BB5566;
+$submission: #778899;
+$placement: #0B344F;
+$note: #747884;
+
+// Color Applications
+$positive: $ocean;
+$success: $grass;
+$negative: $grapefruit;
+$warning: $sunflower;
+$background: $off-white;
+$background-dark: #E2E2E2;
+$neutral: #747884;
+
+/*
+===================
+    Color Maps
+===================
+*/
+
+// Analytics Color Map
+$analytics-colors: (
+    aqua: $aqua,
+    ocean: $ocean,
+    mint: $mint,
+    grass: $grass,
+    sunflower: $sunflower,
+    bittersweet: $bittersweet,
+    grapefruit: $grapefruit,
+    carnation: $carnation,
+    lavender: $lavender
+);
+
+// Entity Color Map
+$entity-colors: (
+    company: $company,
+    candidate: $candidate,
+    navigation: $navigation,
+    lead: $lead,
+    contact: $contact,
+    opportunity: $opportunity,
+    job: $job,
+    submission: $submission,
+    placement: $placement,
+    note: $note,
+    task: $neutral
+);
+
+// Generic Color Map
+$colors: (
+    positive: $ocean,
+    success: $grass,
+    negative: $grapefruit,
+    warning: $sunflower,
+    background: $off-white,
+    black: $black,
+    white: $white,
+    grey: $grey,
+    off-white: $off-white,
+    dark: $dark,
+    light: $light,
+    pulse: $pulse,
+    neutral: $neutral
+);
+
+// Loading Dot Color Map
+$dot-colors: (
+    ocean: $ocean,
+    lavender: $lavender,
+    grapefruit: $grapefruit,
+    sunflower: $sunflower,
+    mint: $mint
+);
+
+// Typography
+// -------------------------
+$base-font-size: 14px;
+$base-font-family: "Roboto", sans-serif;
+$base-font-color: $dark;
+$base-line-height: 24px;
+$alt-font-family: Georgia, "Times New Roman", Times, serif;
+
+// Function: Square Root
 
 //@function sqrt($r) {
 //    $x0: 1;
@@ -11,4 +121,14 @@ $blue: #07f;
 //    }
 //
 //    @return $x1;
+//}
+
+// Implementation:
+
+//@for $i from 1 through 6 {
+//    h#{i} {
+//        &.lead {
+//            font-size: sqrt((2.5/($i/2)))em;
+//        }
+//    }
 //}

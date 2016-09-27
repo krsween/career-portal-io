@@ -1,12 +1,14 @@
 @import "vars";
 
 html, body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
     //height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    color: $primary;
+    color: $base-font-color;
 }
 
 body {
@@ -17,17 +19,9 @@ body {
     h5 {
         font-weight: 300;
         &.lead {
-            color: rgba($primary, .75);
+            color: rgba($navigation, .75);
         }
     }
-
-    //@for $i from 1 through 6 {
-    //    h#{i} {
-    //        &.lead {
-    //            font-size: sqrt((2.5/($i/2)))em;
-    //        }
-    //    }
-    //}
 
     h1.lead {
         font-size: 2.5em;
@@ -40,10 +34,6 @@ body {
     }
     h4.lead {
         font-size: 1.75em;
-    }
-
-    p {
-        line-height: 1.75em;
     }
 
     app-root {
@@ -64,7 +54,7 @@ body {
 
         header {
             display: flex;
-            background-color: rgba($primary, 1);
+            background-color: rgba($navigation, 1);
             flex: 1 1 80px;
             // Primary Navigation
             nav {
@@ -90,7 +80,7 @@ body {
                     color: rgba(white, .7);
                     text-decoration: none;
                     transition: background-color 250ms, color 250ms, border-color 250ms;
-                    border-top: solid 2px $primary;
+                    border-top: solid 2px $navigation;
 
                     &:hover {
                         color: white;
@@ -120,7 +110,7 @@ body {
         footer {
             display: flex;
             flex: 1 1 80px;
-            color: rgba($primary, .5);
+            color: rgba($navigation, .5);
             font-size: .9em;
             width: 100%;
             justify-content: center;
@@ -134,6 +124,6 @@ body {
 .divider {
     width: 100%;
     margin: 3em 0 3em;
-    border-bottom: dashed thin rgba($primary, .25);
+    border-bottom: dashed thin rgba($navigation, .25);
 }
 

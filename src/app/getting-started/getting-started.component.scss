@@ -2,7 +2,7 @@
 
 .jumbotron {
     margin-bottom: 1em;
-    background-color: $primary;
+    background-color: $navigation;
     color: white;
     text-align: center;
     padding: 2em 0 4em;
@@ -13,7 +13,7 @@
         margin-top: 3em;
         > a {
             text-decoration: none;
-            color: $primary;
+            color: $navigation;
             border: none;
             background: rgba(white, .8);
             padding: .65em 1.75em;
@@ -35,11 +35,11 @@
 
         > a:last-child {
             margin-right: 0;
-            background-color: $blue;
+            background-color: $positive;
             color: white;
 
             &:hover {
-                background-color: darken($blue, 15%);
+                background-color: darken($positive, 15%);
             }
         }
     }
