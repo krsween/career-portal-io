@@ -6,6 +6,6 @@ export class CareerPortalIoPage {
     }
 
     getNavigationLinks() {
-        return element.all(by.tagName('a')).count();
+        return element.all(by.tagName('header nav a')).count();
     }
 }

@@ -9,6 +9,6 @@ describe('App: AppComponent', function() {
 
     it('should have 4 primary navigation buttons.', () => {
         page.navigateTo();
-        expect(page.getNavigationLinks()).toEqual(4);
+        expect(page.getNavigationLinks()).toEqual(5);
     });
 });

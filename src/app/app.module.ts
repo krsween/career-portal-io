@@ -10,6 +10,7 @@ import { routing } from './app.routing';
 import { GettingStartedComponent } from './getting-started/getting-started.component';
 import { ExtensibilityComponent } from './extensibility/extensibility.component';
 import { DeploymentComponent } from './deployment/deployment.component';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
     declarations: [
@@ -17,7 +18,8 @@ import { DeploymentComponent } from './deployment/deployment.component';
         CustomizationComponent,
         GettingStartedComponent,
         ExtensibilityComponent,
-        DeploymentComponent
+        DeploymentComponent,
+        FaqComponent
     ],
     imports: [
         BrowserModule,

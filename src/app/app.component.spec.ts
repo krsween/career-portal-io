@@ -8,6 +8,7 @@ import { CustomizationComponent } from './customization/customization.component'
 import { ExtensibilityComponent } from './extensibility/extensibility.component';
 import { DeploymentComponent } from './deployment/deployment.component';
 import { GettingStartedComponent } from './getting-started/getting-started.component';
+import { FaqComponent } from './faq/faq.component';
 import { routing } from './app.routing';
 
 describe('App: CareerPortalIo', () => {
@@ -18,7 +19,8 @@ describe('App: CareerPortalIo', () => {
                 CustomizationComponent,
                 ExtensibilityComponent,
                 DeploymentComponent,
-                GettingStartedComponent
+                GettingStartedComponent,
+                FaqComponent
             ],
             imports: [RouterTestingModule.withRoutes(routing)],
         });
@@ -44,5 +46,6 @@ describe('App: CareerPortalIo', () => {
         expect(compiled.innerHTML).toContain('Customization');
         expect(compiled.innerHTML).toContain('Extensibility');
         expect(compiled.innerHTML).toContain('Deployment');
+        expect(compiled.innerHTML).toContain('FAQ');
     }));
 });

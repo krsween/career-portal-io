@@ -2,16 +2,68 @@
     <h1>A Bullhorn Platform SDK app that allows candidates to search for and apply to jobs.</h1>
     <h4>Download the code get started today.</h4>
     <nav>
-        <a href="//github.com/bullhorn/career-portal/zipball/master"><i class="fa fa-file-zip-o"></i> Download .zip</a>
-        <a href="//github.com/bullhorn/career-portal/tarball/master"><i class="fa fa-file-zip-o"></i> Download .tar.gz</a>
-        <a href="//github.com/bullhorn/career-portal"><i class="fa fa-github"></i> View on Github</a>
+        <a class="btn" href="//github.com/bullhorn/career-portal/zipball/master"><i class="fa fa-file-zip-o"></i> Download .zip</a>
+        <a class="btn" href="//github.com/bullhorn/career-portal/tarball/master"><i class="fa fa-file-zip-o"></i> Download .tar.gz</a>
+        <a class="btn primary" target="_blank" href="//github.com/bullhorn/career-portal"><i class="fa fa-github"></i> View on Github</a>
     </nav>
 </div>
 <section>
     <h2 class="lead">Bridging the gap between applicants and opportunities</h2>
     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis.</p>
     <div class="divider"></div>
-    <h1 class="lead">Getting Started</h1>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+    <ol>
+        <li>
+            <span><p>1</p></span>
+            <div>
+                <h2>Configure Developer Tools</h2>
+                <p>Career Portal is a lightweight Javascript/HTML/CSS app that can run virtually anywhere, but it's developed using cutting edge technology, so in order to configure it and extend it you will need some tools: <a href="#" target="_blank">Git</a>, <a href="#" target="_blank">Node</a>, <a href="#" target="_blank">Gulp</a>, & <a href="#" target="_blank">Bower</a>.</p>
+                <p>Installation instructions for <strong>git</strong> can be found <a href="#" target="_blank">here</a>.</p>
+                <p>Installation instructions for <strong>node</strong> can be found <a href="#" target="_blank">here</a>.</p>
+                <p>Once those are installed, open up a command line or terminal and paste in the following script to install Bower and Gulp.</p>
+                <code>npm install -g gulp bower</code>
+                <p><a routerLink="/faq"><em>Having trouble?</em></a></p>
+            </div>
+        </li>
+        <li>
+            <span><p>2</p></span>
+            <div>
+                <h2>Clone Repository</h2>
+                <p>Now that you have your developer tools loaded, navigate terminal or command prompt to a directory that you want to hold the Career Portal source code.</p>
+                <code>cd ../some-dev-directory</code>
+                <p>From here, clone the Career Portal source code.</p>
+                <code>git clone git@github.com:bullhorn/career-portal.git</code>
+                <p>Or to use https:</p>
+                <code>git clone https://github.com/bullhorn/career-portal.git</code>
+                <p><a routerLink="/faq"><em>Having trouble?</em></a></p>
+            </div>
+        </li>
+        <li>
+            <span><p>3</p></span>
+            <div>
+                <h2>Install App Dependencies</h2>
+                <p>Now that you have the source code cloned, open that directory in terminal or command prompt and install all of the app dependencies. This can take a few minutes.</p>
+                <code>cd ./career-portal</code>
+                <br><br>
+                <code>npm install</code>
+                <p><a routerLink="/faq"><em>Having trouble?</em></a></p>
+            </div>
+        </li>
+        <li>
+            <span><p>4</p></span>
+            <div>
+                <h2>Running Career Portal Locally</h2>
+                <p>Now that you have Career Portal installed, you can run the app locally. In order to do so, you will need your Bullhorn <strong>Corp Token</strong> and <strong>Swim Lane</strong></p>
+                <p>Once you have those, you can run the app using the following command.</p>
+                <code>gulp serve --corpToken='[CORP_TOKEN]' --sl='[SWIMLANE]' --companyName='[COMPANY_NAME]' --liClientId='[LINKED_IN_CLIENT_ID]'</code>
+                <p><a routerLink="/faq"><em>Having trouble?</em></a></p>
+            </div>
+        </li>
+        <li>
+            <span><p>5</p></span>
+            <div>
+                <h2>Customize & Extend Your Portal</h2>
+                <p>Now that you have Career Portal up and running, you can move on to <a routerLink="/customization">customizing</a> and <a routerLink="/extensibility">extending</a> Career Portal.</p>
+            </div>
+        </li>
+    </ol>
 </section>

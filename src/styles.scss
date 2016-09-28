@@ -97,11 +97,13 @@ body {
         app-deployment,
         app-customization,
         app-extensibility,
-        app-getting-started {
+        app-getting-started,
+        app-faq {
             flex: 1;
             display: flex;
             flex-flow: inherit;
             > section {
+                padding-top: 2em;
                 width: 900px;
                 margin: auto;
             }
@@ -127,3 +129,57 @@ body {
     border-bottom: dashed thin rgba($navigation, .25);
 }
 
+a {
+    color: rgba($navigation, .75);
+    transition: color 250ms;
+    &:hover {
+        color: $navigation;
+    }
+}
+
+code {
+    background-color: rgba($navigation, 0.1);
+    color: $navigation;
+    padding: .5em 1em;
+    border: dashed thin $navigation;
+    border-radius: .5em;
+    display: block;
+}
+
+.btn {
+    text-decoration: none;
+    color: $navigation;
+    border: none;
+    background: rgba(white, .8);
+    padding: .65em 1.75em;
+    border-radius: .5em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8em;
+    margin-right: .5em;
+    transition: background-color 250ms, color 250ms;
+    cursor: pointer;
+
+    &:hover {
+        background-color: white;
+    }
+
+    &.primary {
+        margin-right: 0;
+        background-color: $positive;
+        color: white;
+
+        &:hover {
+            background-color: darken($positive, 15%);
+        }
+    }
+
+    &.large {
+        padding: 1.2em 2em;
+        font-size: 1em;
+    }
+
+    > i {
+        font-size: 1.25em;
+        margin-right: .5em;
+    }
+}

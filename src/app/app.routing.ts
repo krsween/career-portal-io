@@ -6,6 +6,7 @@ import { GettingStartedComponent } from './getting-started/getting-started.compo
 import { CustomizationComponent } from './customization/customization.component';
 import { ExtensibilityComponent } from './extensibility/extensibility.component';
 import { DeploymentComponent } from './deployment/deployment.component';
+import { FaqComponent } from './faq/faq.component';
 
 const appRoutes: Routes = [
     {
@@ -23,6 +24,10 @@ const appRoutes: Routes = [
     {
         path: 'getting-started',
         component: GettingStartedComponent
+    },
+    {
+        path: 'faq',
+        component: FaqComponent
     },
     {
         path: '**',
